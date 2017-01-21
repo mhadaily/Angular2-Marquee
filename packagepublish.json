@@ -1,0 +1,30 @@
+{
+  "name": "angular2-marquee",
+  "version": "0.1.0",
+  "description": "This is an angular2 marquee",
+  "main": "angular2-marquee",
+  "typings": "angular2-marquee.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhadaily/angular2-marquee.git"
+  },
+  "keywords": [
+    "angular",
+    "ng",
+    "ngx",
+    "ng2",
+    "marquee"
+  ],
+  "author": "Your Name <yourname@yourdomain.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhadaily/angular2-marquee.git"
+  },
+  "homepage": "https://github.com/mhadaily/angular2-marquee.git#readme",
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

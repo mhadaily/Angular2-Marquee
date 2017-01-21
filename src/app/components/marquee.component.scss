@@ -1,0 +1,251 @@
+// component styles are encapsulated and only applied to their components
+.ngmarquee {
+  color: yellow;
+  font-size: 15px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  > span {
+    font-size: 3em;
+    color: limegreen;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: Scrolling 15s linear infinite;
+    -webkit-animation: Scrolling 15s linear infinite;
+    animation: Scrolling 15s linear infinite;
+  }
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes Scrolling {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes Scrolling {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes Scrolling {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+//Slide-In
+.SlideIn span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: left;
+
+  /* Apply animation to this element */
+  -moz-animation: SlideIn 10s ease-out;
+  -webkit-animation: SlideIn 10s ease-out;
+  animation: SlideIn 10s ease-out;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes SlideIn {
+  0% {
+    -moz-transform: translateX(200%);
+  }
+  100% {
+    -moz-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes SlideIn {
+  0% {
+    -webkit-transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    -moz-transform: translateX(200%); /* Firefox bug fix */
+    -webkit-transform: translateX(200%); /* Firefox bug fix */
+    transform: translateX(200%);
+  }
+  100% {
+    -moz-transform: translateX(0%); /* Firefox bug fix */
+    -webkit-transform: translateX(0%); /* Firefox bug fix */
+    transform: translateX(0%);
+  }
+}
+
+//ScrollVertically
+.ScrollVertically span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  /* Apply animation to this element */
+  -moz-animation: ScrollVertically 15s linear infinite;
+  -webkit-animation: ScrollVertically 15s linear infinite;
+  animation: ScrollVertically 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes ScrollVertically {
+  0% {
+    -moz-transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes ScrollVertically {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+  }
+}
+
+@keyframes ScrollVertically {
+  0% {
+    -moz-transform: translateY(-100%); /* Firefox bug fix */
+    -webkit-transform: translateY(-100%); /* Firefox bug fix */
+    transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(100%); /* Firefox bug fix */
+    -webkit-transform: translateY(100%); /* Firefox bug fix */
+    transform: translateY(100%);
+  }
+}
+
+//Bouncing
+.Bouncing span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: left;
+  /* Apply animation to this element */
+  -moz-animation: Bouncing 5s linear infinite alternate;
+  -webkit-animation: Bouncing 5s linear infinite alternate;
+  animation: Bouncing 5s linear infinite alternate;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes Bouncing {
+  0% {
+    -moz-transform: translateX(70%);
+  }
+  100% {
+    -moz-transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes Bouncing {
+  0% {
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes Bouncing {
+  0% {
+    -moz-transform: translateX(70%); /* Firefox bug fix */
+    -webkit-transform: translateX(70%); /* Firefox bug fix */
+    transform: translateX(70%);
+  }
+  100% {
+    -moz-transform: translateX(0%); /* Firefox bug fix */
+    -webkit-transform: translateX(0%); /* Firefox bug fix */
+    transform: translateX(0%);
+  }
+}
+
+//Left to Right
+.RightLeftToRight span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  /* Apply animation to this element */
+  -moz-animation: LeftToRight 15s linear infinite;
+  -webkit-animation: LeftToRight 15s linear infinite;
+  animation: LeftToRight 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes LeftToRight {
+  0% {
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes LeftToRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes LeftToRight {
+  0% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+}
