@@ -1,7 +1,7 @@
 {
   "name": "angular2-marquee",
   "version": "0.1.0",
-  "description": "This is an angular2 marquee derictive",
+  "description": "This is an Angular marquee directive",
   "repository": {
     "url": "https://github.com/mhadaily/angular2-marquee.git"
   },

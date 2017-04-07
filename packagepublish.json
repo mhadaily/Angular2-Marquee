@@ -1,7 +1,7 @@
 {
   "name": "angular2-marquee",
   "version": "0.1.0",
-  "description": "This is an angular2 marquee",
+  "description": "This is an Angular marquee",
   "main": "angular2-marquee",
   "typings": "angular2-marquee.d.ts",
   "repository": {
@@ -15,7 +15,7 @@
     "ng2",
     "marquee"
   ],
-  "author": "Your Name <yourname@yourdomain.com>",
+  "author": "Majid Hajian <mhadaily@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mhadaily/angular2-marquee.git"
